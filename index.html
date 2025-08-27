@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3rd webpage</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font: bold;
+      }
+
+      #hero section {
+        background-image: url("./assignment/image-header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+      }
+
+      #navbar {
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+      }
+
+      #about {
+        text-align: end;
+      }
+
+      .header {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: -1px;
+        left: 40%;
+      }
+
+      #imgheader {
+        position: relative;
+      }
+
+      .transform {
+        display: flex;
+      }
+
+      #brandtext {
+        width: 50%;
+        text-align: center;
+        padding-top: 50px;
+        margin: auto;
+      }
+
+      #imgtransform {
+        width: 50%;
+        object-fit: cover;
+        margin-right: 0;
+      }
+
+      #imagestandout {
+        width: 50%;
+      }
+
+      #standout {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+
+      #imggraphic {
+        width: 100%;
+        position: relative;
+      }
+
+      .graphic {
+        position: relative;
+        bottom: 30%;
+        left: 200px;
+        color: hsl(167, 40%, 24%);
+      }
+
+      /* .photography {
+        position: relative;
+        bottom: 230px;
+        left: 200px;
+        color: hsl(198, 62%, 26%);
+      } */
+
+      #imgphotography {
+        width: 100%;
+        position: relative;
+      }
+
+      #testify {
+        text-align: center;
+        padding: 50px;
+        margin-left: 100px;
+      }
+
+      #testimonial {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+
+      #imgemily {
+        border-radius: 50px;
+      }
+      #imgthomas {
+        border-radius: 70px;
+      }
+      #imgjennie {
+        border-radius: 70px;
+      }
+
+      .gallery {
+        display: flex;
+      }
+
+      #footer {
+        background-color: #90d4c6;
+        text-align: center;
+        padding: 100px;
+        font-weight: 900;
+        font-size: 18px;
+      }
+
+      #sunnyside {
+        padding-bottom: 50px;
+        font-size: xx-large;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      #services {
+        padding-bottom: 20px;
+        margin: 0 16px;
+      }
+
+      #icons {
+        padding-top: 50px;
+        display: inline-flex;
+        gap: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="hero section">
+      <nav id="navbar">
+        <div id="logo"></div>
+
+        <div id="about">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#"><button>Contact</button></a>
+        </div>
+      </nav>
+
+      <header>
+        <div>
+          <h1 class="header">WE ARE CREATIVES</h1>
+          <div id="imgheader">
+            <img
+              src="image-header.jpg"
+              alt="half orange"
+              width="100%
+            "
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section>
+      <div class="transform">
+        <div id="brandtext">
+          <h2>Transform your <br />brand</h2>
+          <p>
+            We are a full-service creative agency specializing in<br />helping
+            brands grow fast. Engage your clients through<br />compelling
+            visuals that do most of the marketing for you.
+          </p>
+          <div>LEARN MORE</div>
+        </div>
+
+        <div id="imgtransform">
+          <img src="image-transform.jpg" alt="egg with a shadow" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="transform">
+        <div id="imgstandout">
+          <img src="image-stand-out.jpg" alt="a pink cup" />
+        </div>
+        <div id="standout">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, reserchers,<br />photographers,
+            videographers, and copywriters, we'll<br />build and extend your
+            brand in digital places.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="transform">
+        <div>
+          <div id="imggraphic">
+            <img src="image-graphic-design.jpg" alt="two wet apples" />
+          </div>
+          <div class="graphic">
+            <h2>Graphic Design</h2>
+            <p>
+              Great design makes you memorable. We deliver<br />
+              artwork that underscores your brand message<br />
+              and captures potential clients' attention.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div id="imgphotography">
+            <img src="image-photography.jpg" alt="tangerine" />
+          </div>
+          <div class="photography">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most<br />stunning,
+              high-quality photos that improve your<br />business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testify">
+      <div>
+        <h3>CLIENT TESTIMONIALS</h3>
+      </div>
+      <div id="testimonial">
+        <div id="1actualtestimonial">
+          <div id="imgemily">
+            <img
+              src="image-emily.jpg"
+              alt="Emily"
+              style="border-radius: 70px"
+            />
+
+            <p>
+              We put our trust in Sunnyside and they<br />
+              delivered, making sure our needs were met<br />
+              and deadlines were always hit.
+            </p>
+            <div id="Emily">Emily R.</div>
+            <div id="marketing">Marketing Director</div>
+          </div>
+        </div>
+
+        <div id="2testimonial">
+          <div id="imgthomas">
+            <img
+              src="image-thomas.jpg"
+              alt="Thomas"
+              style="border-radius: 70px"
+            />
+          </div>
+          <p>
+            Sunnyside's enthusiasm coupled with their<br />keen interest in our
+            brand's success made it<br />
+            a satisfying and enjoyable experience
+          </p>
+          <div id="thomas">Thomas S.</div>
+          <div id="chief">Chief Operating Officer</div>
+        </div>
+
+        <div id="3testimonial">
+          <div id="imgjennie">
+            <img
+              src="image-jennie.jpg"
+              alt="Jennie"
+              style="border-radius: 70px"
+            />
+          </div>
+          <p>
+            Incredible end result! Our sales increased<br />
+            over 400% when we worked with Sunnyside.<br />
+            Highly reommended!
+          </p>
+          <div id="Jenni">Jennie F.</div>
+          <div id="business">Business Owner</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div id="milk">
+        <img
+          src="image-gallery-milkbottles.jpg"
+          alt="Milkbottles"
+          style="width: 360px; height: 400px"
+        />
+      </div>
+      <div id="orange">
+        <img
+          src="image-gallery-orange.jpg"
+          alt="orange"
+          style="width: 360px; height: 400px"
+        />
+      </div>
+      <div id="cone">
+        <img
+          src="image-gallery-cone.jpg"
+          alt="cone"
+          style="width: 360px; height: 400px"
+        />
+      </div>
+      <div id="sugar">
+        <img
+          src="image-gallery-sugarcubes.jpg"
+          alt="sugarcubes"
+          style="width: 360px; height: 400px"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer">
+        <div id="sunnyside">sunnyside</div>
+
+        <div id="services">
+          <span>About</span> <span>Services</span> <span>Projects</span>
+        </div>
+
+        <div id="icons">
+          <img src="icon-facebook.svg" alt="Facebook Icon" />
+          <img src="icon-instagram.svg" alt="Instagram Icon" />
+          <img src="icon-twitter.svg" alt="Twitter Icon" />
+          <img src="icon-pinterest.svg" alt="Pinterest Icon" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
