@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fraunces -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>3rd webpage</title>
 
     <style>
@@ -10,19 +24,22 @@
         padding: 0;
         margin: 0;
         font-size: 18px;
-        font: bold;
+        font-family: "barlow", "serif";
+        font-weight: 600;
+        color: hsl(212, 27%, 19%);
       }
 
       #hero section {
-        background-image: url("./assignment/image-header.jpg");
+        background-image: url("./image-header.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 90vh;
+        height: 100vh;
       }
 
       #navbar {
-        padding: 20px;
+        padding: 40px;
+        padding-top: 50px;
         margin: 0;
         display: flex;
         gap: 50px;
@@ -33,16 +50,38 @@
         text-align: end;
       }
 
-      .header {
-        text-align: center;
-        color: white;
-        position: absolute;
-        top: -1px;
-        left: 40%;
+      #mybutton {
+        border-radius: 40px;
+        padding: 10px;
+        width: 100px;
+        color: hsl(212, 27%, 19%);
+        border: 0;
       }
 
-      #imgheader {
-        position: relative;
+      #header {
+        color: white;
+        position: center;
+        top: 10%;
+        left: 40%;
+        font-family: "fraunces";
+        font-weight: 900;
+        font-size: 60px;
+        margin-top: 130px;
+      }
+
+      .Two {
+        font-family: "Fraunces", "seriff";
+        font-weight: 900;
+        font-size: 50px;
+      }
+
+      .Three {
+        font-family: "Fraunces", "seriff";
+        font-weight: 900;
+      }
+
+      .para {
+        font: hsl(210, 4%, 67%);
       }
 
       .transform {
@@ -52,14 +91,17 @@
       #brandtext {
         width: 50%;
         text-align: center;
-        padding-top: 50px;
         margin: auto;
+        position: relative;
       }
 
-      #imgtransform {
+      .imgtransform {
         width: 50%;
-        object-fit: cover;
         margin-right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
       }
 
       #imagestandout {
@@ -72,54 +114,71 @@
         text-align: center;
       }
 
-      #imggraphic {
-        width: 100%;
-        position: relative;
+      .impossible {
+        display: flex;
       }
 
-      .graphic {
-        position: relative;
-        bottom: 30%;
-        left: 200px;
+      #GD {
+        background-image: url("./image-graphic-design.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
         color: hsl(167, 40%, 24%);
       }
 
-      /* .photography {
-        position: relative;
-        bottom: 230px;
-        left: 200px;
+      #P {
+        background-image: url("./image-photography.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
         color: hsl(198, 62%, 26%);
-      } */
+      }
 
-      #imgphotography {
-        width: 100%;
+      #graphictext {
         position: relative;
+
+        text-align: center;
+        padding-top: 50px;
+        margin: auto;
+      }
+
+      #phototext {
+        position: relative;
+
+        text-align: center;
+        padding-top: 50px;
+        margin: auto;
       }
 
       #testify {
+        margin-top: 80px;
         text-align: center;
         padding: 50px;
         margin-left: 100px;
       }
 
       #testimonial {
+        margin-top: 50px;
         display: flex;
         text-align: center;
         justify-content: space-between;
       }
 
       #imgemily {
-        border-radius: 50px;
+        border-radius: 10px;
       }
       #imgthomas {
-        border-radius: 70px;
+        border-radius: 10px;
       }
       #imgjennie {
-        border-radius: 70px;
+        border-radius: 10px;
       }
 
       .gallery {
         display: flex;
+        margin-top: 100px;
       }
 
       #footer {
@@ -128,6 +187,7 @@
         padding: 100px;
         font-weight: 900;
         font-size: 18px;
+        color: hsl(167, 40%, 24%);
       }
 
       #sunnyside {
@@ -141,6 +201,9 @@
       #services {
         padding-bottom: 20px;
         margin: 0 16px;
+        display: flex;
+        gap: 50px;
+        text-align: center;
       }
 
       #icons {
@@ -152,29 +215,55 @@
   </head>
 
   <body>
-    <div id="hero section">
+    <div
+      id="hero section"
+      style="
+        background-image: url('./image-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+      "
+    >
       <nav id="navbar">
-        <div id="logo"></div>
-
-        <div id="about">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#"><button>Contact</button></a>
+        <div>
+          <a href="#"><img src="logo.svg" alt="logo" style="size: 100px" /></a>
+        </div>
+        <div id="about" style="display: flex; gap: 50px">
+          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
+            >About</a
+          >
+          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
+            >Services</a
+          >
+          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
+            >Projects</a
+          >
+          <a href="#"><button id="mybutton">Contact</button></a>
         </div>
       </nav>
 
       <header>
         <div>
-          <h1 class="header">WE ARE CREATIVES</h1>
-          <div id="imgheader">
-            <img
-              src="image-header.jpg"
-              alt="half orange"
-              width="100%
+          <h1
+            id="header"
+            style="
+              text-align: center;
+              top: 5%;
+              left: 40%;
+              letter-spacing: 5px;
+              word-spacing: 5px;
             "
-            />
-          </div>
+          >
+            WE ARE CREATIVES
+          </h1>
+        </div>
+
+        <div id="icon arrow">
+          <img
+            src="icon-arrow-down.svg"
+            alt="icon-arrow-down"
+            style="margin-left: 720px; margin-bottom: 50px"
+          />
         </div>
       </header>
     </div>
@@ -182,8 +271,8 @@
     <section>
       <div class="transform">
         <div id="brandtext">
-          <h2>Transform your <br />brand</h2>
-          <p>
+          <h2 class="Two">Transform your <br />brand</h2>
+          <p class="para">
             We are a full-service creative agency specializing in<br />helping
             brands grow fast. Engage your clients through<br />compelling
             visuals that do most of the marketing for you.
@@ -191,20 +280,31 @@
           <div>LEARN MORE</div>
         </div>
 
-        <div id="imgtransform">
-          <img src="image-transform.jpg" alt="egg with a shadow" />
-        </div>
+        <div
+          class="imgtransform"
+          style="background-image: url('./image-transform.jpg')"
+        ></div>
       </div>
     </section>
 
     <section>
       <div class="transform">
-        <div id="imgstandout">
-          <img src="image-stand-out.jpg" alt="a pink cup" />
-        </div>
+        <div
+          class="imgtransform"
+          style="
+            background-image: url('./image-stand-out.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+          "
+        ></div>
         <div id="standout">
-          <h2>Stand out to the right audience</h2>
-          <p>
+          <h2 class="Two">
+            Stand out to the right<br />
+            audience
+          </h2>
+          <p class="para">
             Using a collaborative formula of designers, reserchers,<br />photographers,
             videographers, and copywriters, we'll<br />build and extend your
             brand in digital places.
@@ -213,39 +313,54 @@
       </div>
     </section>
 
-    <section>
-      <div class="transform">
-        <div>
-          <div id="imggraphic">
-            <img src="image-graphic-design.jpg" alt="two wet apples" />
-          </div>
-          <div class="graphic">
-            <h2>Graphic Design</h2>
-            <p>
-              Great design makes you memorable. We deliver<br />
-              artwork that underscores your brand message<br />
-              and captures potential clients' attention.
-            </p>
-          </div>
+    <section class="impossible">
+      <div
+        id="GP"
+        style="
+          display: flex;
+          background-image: url('./image-graphic-design.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+        "
+      >
+        <div id="graphictext" style="margin-bottom: 80px">
+          <h3 class="Three">Graphic Design</h3>
+          <p>
+            Great design makes you memorable. We deliver<br />
+            artwork that underscores your brand message<br />
+            and captures potential clients' attention.
+          </p>
         </div>
-        <div>
-          <div id="imgphotography">
-            <img src="image-photography.jpg" alt="tangerine" />
-          </div>
-          <div class="photography">
-            <h2>Photography</h2>
-            <p>
-              Increase your credibility by getting the most<br />stunning,
-              high-quality photos that improve your<br />business image.
-            </p>
-          </div>
+      </div>
+
+      <div
+        id="P"
+        style="
+          display: flex;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100vh;
+          text-align: end;
+        "
+      >
+        <div id="phototext" style="margin-bottom: 90px">
+          <h3 class="Three">Photography</h3>
+          <p>
+            Increase your credibility by getting the most<br />
+            stunning, high-quality photos that improve your<br />
+            business image.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="testify">
       <div>
-        <h3>CLIENT TESTIMONIALS</h3>
+        <h3 class="para">CLIENT TESTIMONIALS</h3>
       </div>
       <div id="testimonial">
         <div id="1actualtestimonial">
@@ -253,10 +368,10 @@
             <img
               src="image-emily.jpg"
               alt="Emily"
-              style="border-radius: 70px"
+              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
             />
 
-            <p>
+            <p class="para">
               We put our trust in Sunnyside and they<br />
               delivered, making sure our needs were met<br />
               and deadlines were always hit.
@@ -271,10 +386,10 @@
             <img
               src="image-thomas.jpg"
               alt="Thomas"
-              style="border-radius: 70px"
+              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
             />
           </div>
-          <p>
+          <p class="para">
             Sunnyside's enthusiasm coupled with their<br />keen interest in our
             brand's success made it<br />
             a satisfying and enjoyable experience
@@ -288,10 +403,10 @@
             <img
               src="image-jennie.jpg"
               alt="Jennie"
-              style="border-radius: 70px"
+              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
             />
           </div>
-          <p>
+          <p class="para">
             Incredible end result! Our sales increased<br />
             over 400% when we worked with Sunnyside.<br />
             Highly reommended!
@@ -337,8 +452,40 @@
       <div id="footer">
         <div id="sunnyside">sunnyside</div>
 
-        <div id="services">
-          <span>About</span> <span>Services</span> <span>Projects</span>
+        <div
+          id="services"
+          style="text-align: center; justify-content: space-between"
+        >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              display: flex;
+              gap: 50px;
+              color: hsl(198, 62%, 26%);
+            "
+            >About</a
+          >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              display: flex;
+              gap: 50px;
+              color: hsl(198, 62%, 26%);
+            "
+            >Services</a
+          >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              display: flex;
+              gap: 50px;
+              color: hsl(198, 62%, 26%);
+            "
+            >Projects</a
+          >
         </div>
 
         <div id="icons">
