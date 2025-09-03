@@ -1,0 +1,251 @@
+/* body */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "barlow", "serif";
+  font-weight: 600;
+  color: hsl(212, 27%, 19%);
+}
+
+/* hero-section */
+
+#hero-section {
+  background-image: url(images/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* navbar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0;
+  padding-top: 50px;
+  padding: 40px;
+}
+
+#logo
+
+/* navbar links */
+
+#navbar-links {
+  text-align: end;
+  text-decoration: none;
+  text-size-adjust: 10px;
+  color: hsl(0, 100%, 100%);
+}
+
+/* button
+ */
+
+#my-button {
+  border-radius: 40px;
+  padding: 10px;
+  width: 100px;
+  color: hsl(212, 27%, 19%);
+  border: 0;
+}
+
+/* H1 text */
+
+#h1-header {
+  color: white;
+  position: center;
+  top: 5%;
+  left: 40%;
+  font-family: "fraunces";
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 130px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+/* arrow icon */
+
+#arrow-icon {
+  text-align: center;
+}
+
+/* Transform and standout sections */
+
+.first-two-sections {
+  display: flex;
+  font-family: "Fraunces", "seriff";
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Transform and standout images */
+
+.first-two-sections-images {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Transform and standout text */
+
+.first-two-sections-text {
+  width: 50%;
+  margin: auto;
+}
+
+.first-two-h2-headings {
+  font-family: "Fraunces", "seriff";
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.first-two-paragraphs {
+  font-family: "Fraunces", "seriff";
+}
+
+/* apple and orange section */
+
+#apple-and-orange-container {
+  display: flex;
+  color: hsl(167, 40%, 24%);
+}
+
+#apple-image {
+  background-image: url("images/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#orange-image {
+  background-image: url("./images/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+/* apple and orange text*/
+
+.h3-heading {
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+  font-family: "Fraunces";
+  font-size: 70px;
+}
+
+#graphic-design-text {
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+}
+
+#photography-text {
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+}
+
+/* Testimonial */
+#testimonial {
+  text-align: center;
+  color: Grey 550 hsl(232, 10%, 55%);
+}
+
+#all-testimonials {
+  text-align: center;
+}
+
+#testimonial-h4-heading {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+.emily-image {
+  border-radius: 80px;
+  margin-bottom: 50px;
+  width: 70px;
+}
+
+/* Emily's testimonial represents all the testimonials because their styling are similar */
+
+.emily-testimonial {
+  text-align: center;
+}
+
+.testimonial-paragraphs {
+  text-align: center;
+}
+
+.client-name {
+  text-align: center;
+  font-family: "Fraunces";
+  font-weight: 900;
+}
+.client-job {
+  font-family: "barlow";
+  font-weight: 200;
+}
+
+/* gallery section */
+
+#gallery-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#milk {
+  width: 360px;
+  height: 400px;
+}
+
+#half-orange {
+  width: 360px;
+  height: 400px;
+}
+
+#cone {
+  width: 360px;
+  height: 400px;
+}
+
+#sugar {
+  width: 360px;
+  height: 400px;
+}
+
+/* Footer */
+
+#footer {
+  text-align: center;
+}
+
+#sunnyside-footer {
+  font-family: "barlow";
+  font-weight: 600;
+  font-size: 100px;
+  padding-bottom: 50px;
+}
+
+#footer-links {
+  text-align: center;
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  gap: 50px;
+  color: hsl(198, 62%, 26%);
+  padding-bottom: 20px;
+}
+
+#footer-icons {
+  padding-top: 50px;
+  display: inline-flex;
+  gap: 50px;
+}

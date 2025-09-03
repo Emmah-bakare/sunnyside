@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="/styles.css" />
+
     <!-- Barlow -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,317 +19,87 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>3rd webpage</title>
-
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        font-size: 18px;
-        font-family: "barlow", "serif";
-        font-weight: 600;
-        color: hsl(212, 27%, 19%);
-      }
-
-      #hero section {
-        background-image: url("./image-header.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-      }
-
-      #navbar {
-        padding: 40px;
-        padding-top: 50px;
-        margin: 0;
-        display: flex;
-        gap: 50px;
-        justify-content: space-between;
-      }
-
-      #about {
-        text-align: end;
-      }
-
-      #mybutton {
-        border-radius: 40px;
-        padding: 10px;
-        width: 100px;
-        color: hsl(212, 27%, 19%);
-        border: 0;
-      }
-
-      #header {
-        color: white;
-        position: center;
-        top: 10%;
-        left: 40%;
-        font-family: "fraunces";
-        font-weight: 900;
-        font-size: 60px;
-        margin-top: 130px;
-      }
-
-      .Two {
-        font-family: "Fraunces", "seriff";
-        font-weight: 900;
-        font-size: 50px;
-      }
-
-      .Three {
-        font-family: "Fraunces", "seriff";
-        font-weight: 900;
-      }
-
-      .para {
-        font: hsl(210, 4%, 67%);
-      }
-
-      .transform {
-        display: flex;
-      }
-
-      #brandtext {
-        width: 50%;
-        text-align: center;
-        margin: auto;
-        position: relative;
-      }
-
-      .imgtransform {
-        width: 50%;
-        margin-right: 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-      }
-
-      #imagestandout {
-        width: 50%;
-      }
-
-      #standout {
-        width: 50%;
-        margin: auto;
-        text-align: center;
-      }
-
-      .impossible {
-        display: flex;
-      }
-
-      #GD {
-        background-image: url("./image-graphic-design.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        color: hsl(167, 40%, 24%);
-      }
-
-      #P {
-        background-image: url("./image-photography.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        color: hsl(198, 62%, 26%);
-      }
-
-      #graphictext {
-        position: relative;
-
-        text-align: center;
-        padding-top: 50px;
-        margin: auto;
-      }
-
-      #phototext {
-        position: relative;
-
-        text-align: center;
-        padding-top: 50px;
-        margin: auto;
-      }
-
-      #testify {
-        margin-top: 80px;
-        text-align: center;
-        padding: 50px;
-        margin-left: 100px;
-      }
-
-      #testimonial {
-        margin-top: 50px;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-      }
-
-      #imgemily {
-        border-radius: 10px;
-      }
-      #imgthomas {
-        border-radius: 10px;
-      }
-      #imgjennie {
-        border-radius: 10px;
-      }
-
-      .gallery {
-        display: flex;
-        margin-top: 100px;
-      }
-
-      #footer {
-        background-color: #90d4c6;
-        text-align: center;
-        padding: 100px;
-        font-weight: 900;
-        font-size: 18px;
-        color: hsl(167, 40%, 24%);
-      }
-
-      #sunnyside {
-        padding-bottom: 50px;
-        font-size: xx-large;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-      }
-
-      #services {
-        padding-bottom: 20px;
-        margin: 0 16px;
-        display: flex;
-        gap: 50px;
-        text-align: center;
-      }
-
-      #icons {
-        padding-top: 50px;
-        display: inline-flex;
-        gap: 50px;
-      }
-    </style>
+    <title>Sunnyside Agency</title>
   </head>
 
   <body>
-    <div
-      id="hero section"
-      style="
-        background-image: url('./image-header.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-      "
-    >
+    <!-- Hero section -->
+
+    <div id="hero-section">
       <nav id="navbar">
-        <div>
-          <a href="#"><img src="logo.svg" alt="logo" style="size: 100px" /></a>
+        <div id="logo">
+          <a href="#"><img src="logo.svg" alt="logo" height="34px" /></a>
         </div>
-        <div id="about" style="display: flex; gap: 50px">
-          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
-            >About</a
+        <div class="navbar-links">
+          <a class="navbar-links" href="#">About</a>
+          <a class="navbar-links" href="#">Services</a>
+          <a class="navbar-links" href="#">Projects</a>
+          <a class="navbar-links" href="#"
+            ><button id="my-button">CONTACT</button></a
           >
-          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
-            >Services</a
-          >
-          <a href="#" style="text-decoration: none; color: hsl(0, 100%, 100%)"
-            >Projects</a
-          >
-          <a href="#"><button id="mybutton">Contact</button></a>
         </div>
       </nav>
 
       <header>
         <div>
-          <h1
-            id="header"
-            style="
-              text-align: center;
-              top: 5%;
-              left: 40%;
-              letter-spacing: 5px;
-              word-spacing: 5px;
-            "
-          >
-            WE ARE CREATIVES
-          </h1>
+          <h1 id="h1-header">WE ARE CREATIVES</h1>
         </div>
 
-        <div id="icon arrow">
-          <img
-            src="icon-arrow-down.svg"
-            alt="icon-arrow-down"
-            style="margin-left: 720px; margin-bottom: 50px"
-          />
+        <div id="arrow-icon">
+          <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
         </div>
       </header>
     </div>
 
+    <!-- Egg Section  -->
+
     <section>
-      <div class="transform">
-        <div id="brandtext">
-          <h2 class="Two">Transform your <br />brand</h2>
-          <p class="para">
+      <div id="first-section">
+        <div class="first-two-sections-text">
+          <h2 class="first-two-h2-headings">Transform your <br />brand</h2>
+          <p class="first-two-paragraphs">
             We are a full-service creative agency specializing in<br />helping
             brands grow fast. Engage your clients through<br />compelling
             visuals that do most of the marketing for you.
           </p>
-          <div>LEARN MORE</div>
+          <div>
+            <a class="first-two-sections-link" href="#"> LEARN MORE</a>
+          </div>
         </div>
 
-        <div
-          class="imgtransform"
-          style="background-image: url('./image-transform.jpg')"
-        ></div>
+        <div id="egg-image"></div>
       </div>
     </section>
 
+    <!-- Cup Container -->
+
     <section>
-      <div class="transform">
-        <div
-          class="imgtransform"
-          style="
-            background-image: url('./image-stand-out.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-          "
-        ></div>
-        <div id="standout">
-          <h2 class="Two">
+      <div id="second-section">
+        <div id="cup-image"></div>
+        <div class="first-two-sections-text">
+          <h2 class="first-two-h2-headings">
             Stand out to the right<br />
             audience
           </h2>
-          <p class="para">
+          <p class="first-two-paragraphs">
             Using a collaborative formula of designers, reserchers,<br />photographers,
             videographers, and copywriters, we'll<br />build and extend your
             brand in digital places.
           </p>
+          <div>
+            <a class="first-two-sections-link" href="#"> LEARN MORE</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="impossible">
-      <div
-        id="GP"
-        style="
-          display: flex;
-          background-image: url('./image-graphic-design.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          width: 100%;
-        "
-      >
-        <div id="graphictext" style="margin-bottom: 80px">
-          <h3 class="Three">Graphic Design</h3>
-          <p>
+    <!-- apple and orange container -->
+
+    <section id="apple-and-orange-container">
+      <div id="apple-image">
+        <div class="third-section-text">
+          <h3 class="h3-heading">Graphic Design</h3>
+          <p id="graphic-design-text">
             Great design makes you memorable. We deliver<br />
             artwork that underscores your brand message<br />
             and captures potential clients' attention.
@@ -335,21 +107,10 @@
         </div>
       </div>
 
-      <div
-        id="P"
-        style="
-          display: flex;
-
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 100%;
-          height: 100vh;
-          text-align: end;
-        "
-      >
-        <div id="phototext" style="margin-bottom: 90px">
-          <h3 class="Three">Photography</h3>
-          <p>
+      <div id="orange-image">
+        <div class="third-section-text">
+          <h3 class="h3-heading">Photography</h3>
+          <p id="photography-text">
             Increase your credibility by getting the most<br />
             stunning, high-quality photos that improve your<br />
             business image.
@@ -358,141 +119,132 @@
       </div>
     </section>
 
-    <section id="testify">
-      <div>
-        <h3 class="para">CLIENT TESTIMONIALS</h3>
-      </div>
-      <div id="testimonial">
-        <div id="1actualtestimonial">
-          <div id="imgemily">
-            <img
-              src="image-emily.jpg"
-              alt="Emily"
-              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
-            />
+    <!-- Testimony time -->
 
-            <p class="para">
+    <section id="testimonial-section">
+      <div>
+        <h3 class="testimonial-h4-heading">CLIENT TESTIMONIALS</h3>
+      </div>
+      <div class="all-testimonials">
+        <div class="emily-testimonial">
+          <div>
+            <img class="emily-image" src="images/image-emily.jpg" alt="Emily" />
+
+            <p class="testimonial-paragraphs">
               We put our trust in Sunnyside and they<br />
               delivered, making sure our needs were met<br />
               and deadlines were always hit.
             </p>
-            <div id="Emily">Emily R.</div>
-            <div id="marketing">Marketing Director</div>
+            <div class="client-name">Emily R.</div>
+            <div class="client-job">Marketing Director</div>
           </div>
         </div>
 
-        <div id="2testimonial">
-          <div id="imgthomas">
+        <div class="emily-testimonial">
+          <div>
             <img
-              src="image-thomas.jpg"
+              class="emily-image"
+              src="images/image-thomas.jpg"
               alt="Thomas"
-              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
             />
           </div>
-          <p class="para">
+
+          <p class="testimonial-paragraphs">
             Sunnyside's enthusiasm coupled with their<br />keen interest in our
             brand's success made it<br />
             a satisfying and enjoyable experience
           </p>
-          <div id="thomas">Thomas S.</div>
-          <div id="chief">Chief Operating Officer</div>
+
+          <div class="client-name">Thomas S.</div>
+          <div class="client-job">Chief Operating Officer</div>
         </div>
 
-        <div id="3testimonial">
-          <div id="imgjennie">
+        <div class="emily-testimonial">
+          <div>
             <img
-              src="image-jennie.jpg"
+              class="emily-image"
+              src="images/image-jennie.jpg"
               alt="Jennie"
-              style="border-radius: 80px; margin-bottom: 50px; width: 70px"
             />
           </div>
-          <p class="para">
+
+          <p class="testimonial-paragraphs">
             Incredible end result! Our sales increased<br />
             over 400% when we worked with Sunnyside.<br />
             Highly reommended!
           </p>
-          <div id="Jenni">Jennie F.</div>
-          <div id="business">Business Owner</div>
+
+          <div class="client-name">Jennie F.</div>
+          <div class="client-job">Business Owner</div>
         </div>
       </div>
     </section>
 
-    <section class="gallery">
-      <div id="milk">
-        <img
-          src="image-gallery-milkbottles.jpg"
-          alt="Milkbottles"
-          style="width: 360px; height: 400px"
-        />
-      </div>
-      <div id="orange">
-        <img
-          src="image-gallery-orange.jpg"
-          alt="orange"
-          style="width: 360px; height: 400px"
-        />
-      </div>
-      <div id="cone">
-        <img
-          src="image-gallery-cone.jpg"
-          alt="cone"
-          style="width: 360px; height: 400px"
-        />
-      </div>
-      <div id="sugar">
-        <img
-          src="image-gallery-sugarcubes.jpg"
-          alt="sugarcubes"
-          style="width: 360px; height: 400px"
-        />
+    <!-- Gallery -->
+
+    <section>
+      <div class="gallery">
+        <div>
+          <img
+            class="milk"
+            src="./images/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+            width="100%"
+            height="auto"
+          />
+        </div>
+
+        <div>
+          <img
+            class="orange"
+            src="./images/image-gallery-orange.jpg"
+            alt="half orange"
+            width="100%"
+            height="auto"
+          />
+        </div>
+
+        <div>
+          <img
+            class="cone"
+            src="./images/image-gallery-cone.jpg"
+            alt="cone"
+            width="100%"
+            height="auto"
+          />
+        </div>
+
+        <div>
+          <img
+            class="sugarcubes"
+            src="./images/image-gallery-sugarcubes.jpg"
+            alt="sugarcubes"
+            width="100%"
+            height="auto"
+          />
+        </div>
       </div>
     </section>
+
+    <!-- Footer -->
 
     <footer>
       <div id="footer">
-        <div id="sunnyside">sunnyside</div>
+        <div id="sunnyside-footer">sunnyside</div>
 
-        <div
-          id="services"
-          style="text-align: center; justify-content: space-between"
-        >
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              display: flex;
-              gap: 50px;
-              color: hsl(198, 62%, 26%);
-            "
-            >About</a
-          >
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              display: flex;
-              gap: 50px;
-              color: hsl(198, 62%, 26%);
-            "
-            >Services</a
-          >
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              display: flex;
-              gap: 50px;
-              color: hsl(198, 62%, 26%);
-            "
-            >Projects</a
-          >
+        <div id="footer-links">
+          <ul class="footer-list">
+            <li class="footer-about">About</li>
+            <li class="footer-services">Services</li>
+            <li class="footer-projects">Projects</li>
+          </ul>
         </div>
 
-        <div id="icons">
-          <img src="icon-facebook.svg" alt="Facebook Icon" />
-          <img src="icon-instagram.svg" alt="Instagram Icon" />
-          <img src="icon-twitter.svg" alt="Twitter Icon" />
-          <img src="icon-pinterest.svg" alt="Pinterest Icon" />
+        <div id="footer-icons">
+          <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+          <img src="images/icon-instagram.svg" alt="Instagram Icon" />
+          <img src="images/icon-twitter.svg" alt="Twitter Icon" />
+          <img src="images/icon-pinterest.svg" alt="Pinterest Icon" />
         </div>
       </div>
     </footer>
