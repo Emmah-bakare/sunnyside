@@ -275,6 +275,14 @@ body {
   display: inline-block;
 }
 
+.gallery-one {
+  display: none;
+}
+
+.gallery-two {
+  display: none;
+}
+
 /* Footer */
 
 #footer {
@@ -410,6 +418,363 @@ body {
   }
 
   .gallery {
+    display: none;
+  }
+
+  .gallery-one {
     display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-two {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MEDIA RESPONSIVENESS-TWO */
+@media screen and (min-width: 577px) {
+  #navbar {
+    padding-top: 30px;
+  }
+
+  .hamburger {
+    border: none;
+    display: block;
+    background: none;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  #h1-header {
+    font-size: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+
+  #first-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #egg-image {
+    width: 100%;
+  }
+
+  .first-two-h2-headings {
+    font-size: 40px;
+  }
+
+  .first-two-sections-text {
+    padding: 30px 30px;
+  }
+
+  #second-section {
+    display: block;
+    text-align: center;
+  }
+
+  #cup-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #apple-and-orange-container {
+    display: block;
+  }
+
+  #apple-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #orange-image {
+    width: 100%;
+  }
+
+  .all-testimonials {
+    display: block;
+    margin-top: 0;
+  }
+
+  .testimonial-h4-heading {
+    margin-top: 50px;
+  }
+
+  .client-name {
+    margin-top: 5px;
+  }
+
+  .client-job {
+    margin-bottom: 50px;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .gallery-one {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-two {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MEDIA RESPONSIVENESS-3 */
+@media screen and (min-width: 992px) {
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* navbar links */
+
+  .navbar-links {
+    display: block;
+    text-align: end;
+    text-decoration: none;
+    color: hsl(0, 100%, 100%);
+    padding-left: 40px;
+  }
+
+  /* button
+ */
+
+  #my-button {
+    border-radius: 40px;
+    padding: 16px 0;
+    width: 100px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 800;
+    font-size: medium;
+    border: 0;
+    /* margin: 20px; */
+    width: 140px;
+    font-family: "fraunces";
+  }
+
+  /* H1 text */
+
+  #h1-header {
+    color: white;
+    text-align: center;
+    top: 5%;
+    left: 40%;
+    font-family: "fraunces";
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 130px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+  }
+
+  #first-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #second-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Transform and standout text images */
+
+  #egg-image {
+    background-image: url("./images/image-transform.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    size: cover;
+  }
+
+  #cup-image {
+    background-image: url("./images/image-stand-out.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    size: cover;
+  }
+
+  /* Transform and standout text */
+
+  .first-two-sections-text {
+    width: auto;
+    margin: auto;
+  }
+
+  .first-two-h2-headings {
+    font-family: "Fraunces", "seriff";
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  .first-two-paragraphs {
+    font-family: "Barlow", "seriff";
+    color: hsl(210, 4%, 67%);
+  }
+
+  /* Transform and standout links */
+  .first-two-sections-link {
+    text-decoration: none;
+    color: #23303eff;
+    font-family: "fraunces";
+    font-weight: 900;
+    font-size: medium;
+  }
+
+  /* apple and orange section */
+
+  #apple-and-orange-container {
+    display: flex;
+    color: hsl(167, 40%, 24%);
+  }
+
+  #apple-image {
+    background-image: url("images/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+  }
+
+  #orange-image {
+    background-image: url("./images/image-photography.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+  }
+
+  /* apple and orange text*/
+
+  .third-section-text {
+    top: 50px;
+  }
+
+  .h3-heading {
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    font-family: "Fraunces";
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  #graphic-design-text {
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    color: hsl(167, 40%, 24%);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  #photography-text {
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    color: hsl(198, 62%, 26%);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* Testimonial */
+  #testimonial-section {
+    color: #5a636cff;
+    text-align: center;
+    /* height: 70vh; */
+  }
+
+  .all-testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .testimonial-h4-heading {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-family: "fraunces";
+    font-size: large;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  /* Emily-image represents all the testimonials image because their styling are similar */
+
+  .emily-image {
+    border-radius: 100%;
+    width: 75px;
+    margin-bottom: 50px;
+  }
+
+  .testimonial-paragraphs {
+    line-height: 2pc;
+    margin-bottom: 65px;
+  }
+
+  .client-name {
+    text-align: center;
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: #5a636cff;
+    margin-bottom: 10px;
+  }
+  .client-job {
+    font-family: "barlow";
+    font-weight: 600;
+    font-size: smaller;
+    color: #a7abaeff;
+  }
+
+  /* gallery section */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery .milk {
+    display: inline-block;
+  }
+
+  .gallery .orange {
+    display: inline-block;
+  }
+
+  .gallery .cone {
+    display: inline-block;
+  }
+
+  .gallery .sugar {
+    display: inline-block;
+  }
+
+  .gallery-one {
+    display: none;
+  }
+
+  .gallery-two {
+    display: none;
   }
 }
